@@ -57,12 +57,13 @@ list_of_chars    = list(<str>)
 * **Module [operator](#operator) provides functions itemgetter() and mul() that offer the same functionality as [lambda](#lambda) expressions above.**
 
 ```python
-<list>.insert(<int>, <el>)     # Inserts item at index and moves the rest to the right.
-<el>  = <list>.pop([<int>])    # Removes and returns item at index or from the end.
-<int> = <list>.count(<el>)     # Returns number of occurrences. Also works on strings.
-<int> = <list>.index(<el>)     # Returns index of the first occurrence or raises ValueError.
-<list>.remove(<el>)            # Removes first occurrence of the item or raises ValueError.
-<list>.clear()                 # Removes all items. Also works on dictionary and set.
+<list>.insert(<int>, <el>)          # Inserts item at index and moves the rest to the right.
+<el>  = <list>.pop([<int>])         # Removes and returns item at index or from the end.
+<int> = <list>.count(<el>)          # Returns number of occurrences. Also works on strings.
+<int> = <list>.index(<el>)          # Returns index of the first occurrence or raises ValueError.
+<list>.remove(<el>)                 # Removes first occurrence of the item or raises ValueError.
+<list>.clear()                      # Removes all items. Also works on dictionary and set.
+<first_el>, *_, <last_el> = <list>  # Unpack a list, returning first and last elements, ignoring the middle (from Pydon'ts, by Rodrigo Girão Serrão)
 ```
 
 
